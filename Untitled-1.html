@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>IWA E-Commerce Blog</title>
+</head>
+<body>
+    <header>
+        <h1>IWA E-Commerce Blog</h1>
+        <input type="text" id="search-bar" placeholder="Search for products...">
+    </header>
+    <main>
+        <div class="product-grid">
+            <!-- Example Product Card -->
+            <div class="product-card" onclick="openModal('product1')">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- More product cards... -->
+        </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Detailed description of Product 1.</p>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+            <h3>You might also like:</h3>
+            <!-- Related products -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
